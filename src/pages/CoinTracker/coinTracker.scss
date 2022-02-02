@@ -1,0 +1,15 @@
+@import "src/styles/variables";
+
+.coin-tracker {
+  .coin-tracker__search {
+    margin: 2rem 0;
+  }
+  .ant-table-wrapper {
+    .line-chart {
+      width: 200px;
+      height: 80px !important;
+      canvas {
+      }
+    }
+  }
+}

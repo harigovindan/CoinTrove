@@ -1,0 +1,50 @@
+$primary-color: #092A54;
+$primary-light-color: #092A5450;
+$secondary-color: #ED2861;
+$secondary-light-color: #ED286150;
+$tertiary-color: #F0F1F9;
+$tertiary-light-color: #656B7A30;
+$primary-gradient: transparent linear-gradient(90deg, #FBAB1D 0%, #ED2861 100%) 0% 0% no-repeat padding-box;
+$border-gradient: linear-gradient(90deg, rgb(251,171,29), rgb(237,40,97)) 1;
+$success-color: #2CA01C;
+$orange: #FBAB1D;
+$warning-color: #faad14;
+$danger-color: #DC1700;
+$secondary-text-color: #4F4F4F;
+$description-color: #656B7A;
+$progress-bar-background: #FFFFFF25;
+$note-color: #0e347c;
+
+/* Background colors */
+$table-head-bg: #F8F8F8;
+$body-bg: #F8F9FA;
+$trail-sidebar-active-bg: #ED286110;
+$progress-inner-secondary-bg: #d9d9d9;
+$achievements-progress-inner-bg: #F0F1F9;
+
+/* Borders */
+$primary-border: #ECEDEF;
+$secondary-border: #E6E6E6;
+$table-border: #D6D6D6;
+
+/* Button borders */
+$primary-button-border: #ad94e3;
+
+
+/* Grey shades */
+$black: #000000;
+$white: #FFFFFF;
+$light-black: #656B7A;
+$medium-black: #474747;
+$light-white: #F0F1F9;
+$secondary-white: #F6F6F6;
+$white-low-opacity: #FFFFFF40;
+
+/* Shadows */
+
+$card-shadow: 0px 12px 25px #00000014;
+$button-shadow: 0px 12px 20px #5C29C733;
+$slider-shadow: 0 0 0 5px #092A5423;
+$notification-shadow: 5px 10px 20px #6666660F;
+$secondary-shadow: 0px 3px 12px #00000029;
+$tooltip-shadow: 0px 3px 6px #D9D9D9;

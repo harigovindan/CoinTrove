@@ -1,0 +1,18 @@
+@import "src/styles/variables";
+
+.create-account-form {
+  border-radius: 8px;
+  background-color: $white;
+  box-shadow: $card-shadow;
+  padding: 3rem;
+  width: 40%;
+  margin: 0 auto;
+
+  .create-account-form__submit-wrapper {
+    margin-top: 1rem;
+  }
+
+  .create-account-form__password-note {
+    margin-bottom: 10px;
+  }
+}

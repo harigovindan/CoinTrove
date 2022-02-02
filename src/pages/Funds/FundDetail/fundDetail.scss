@@ -1,0 +1,32 @@
+@import "src/styles/variables";
+
+.fund-detail {
+  h3 {
+    margin-bottom: 10px;
+  }
+  .fund-detail__description {
+    color: $light-black;
+    margin-bottom: 30px;
+    font-family: MontserratSemiBold, sans-serif;
+  }
+
+  .fund-detail__description-detail {
+    color: $light-black;
+    margin-bottom: 2rem;
+  }
+  .fund-detail__basket-performance {
+    .line-chart {
+      width: 100%;
+      canvas {
+        height: 350px;
+      }
+    }
+  }
+  .fund-detail__returns-calculator {
+    margin-top: 2rem;
+  }
+
+  .fund-detail__constituents {
+    margin-top: 2rem;
+  }
+}

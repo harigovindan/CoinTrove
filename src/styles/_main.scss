@@ -1,0 +1,119 @@
+@import "variables";
+@import "icons";
+@import "helpers";
+@import "antOverrides";
+
+/* Font styles */
+
+@font-face {
+  font-family: MontserratBlack;
+  src: url("../assets/fonts/montserrat/Montserrat-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: MontserratBold;
+  src: url("../assets/fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: MontserratExtraBold;
+  src: url("../assets/fonts/montserrat/Montserrat-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: MontserratExtraLight;
+  src: url("../assets/fonts/montserrat/Montserrat-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: MontserratLight;
+  src: url("../assets/fonts/montserrat/Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: MontserratMedium;
+  src: url("../assets/fonts/montserrat/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: MontserratRegular;
+  src: url("../assets/fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: MontserratSemiBold;
+  src: url("../assets/fonts/montserrat/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: MontserratThin;
+  src: url("../assets/fonts/montserrat/Montserrat-Thin.ttf") format("truetype");
+}
+
+body {
+  font-family: MontserratMedium, sans-serif;
+  font-size: 16px;
+  background-color: $body-bg;
+}
+
+h1, .h1 {
+  font-family: MontserratBold, sans-serif;
+  font-size: 42px;
+  line-height: 56px;
+}
+
+h2, .h2 {
+  font-family: MontserratBold, sans-serif;
+  font-size: 34px;
+  line-height: 46px;
+}
+
+h3, .h3 {
+  font-family: MontserratBold, sans-serif;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+h4, .h4 {
+  font-family: MontserratBold, sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+h5, .h5 {
+  font-family: MontserratSemiBold, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 3px;
+}
+
+h6, .h6 {
+  font-family: MontserratSemiBold, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.h7 {
+  font-family: MontserratSemiBold, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.h8 {
+  font-family: MontserratSemiBold, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.app-container {
+  margin-top: 75px;
+  padding: 2.5rem;
+}
+
+@media (min-width: 1440px) {
+  body {
+    display: block;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+}

@@ -1,0 +1,58 @@
+@import "src/styles/variables";
+
+.home {
+  background-color: $white;
+  padding: 0 3rem;
+  h1, h3 {
+    font-family: MontserratExtraBold, sans-serif;
+  }
+  h3 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+.home__landing-background {
+  width: 100%;
+}
+
+.home__landing {
+  h1 {
+    font-size: 4.5rem;
+    line-height: 5rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    color: $light-black;
+    font-size: 1.5rem;
+  }
+}
+
+.home__significance, .home__steps {
+  margin-top: 8rem;
+}
+
+.home__significance-row {
+  margin-top: 4rem;
+}
+
+.home__significance-item {
+  box-shadow: $card-shadow;
+  padding: 2rem;
+  border-radius: 20px;
+  .home__significance-item-description {
+    color: $light-black;
+  }
+}
+
+.home__step-img {
+  width: 100%;
+}
+
+.home__step-item-title-description {
+  color: $light-black;
+}
+
+.home__steps-row {
+  margin: 4rem 0;
+}

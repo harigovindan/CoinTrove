@@ -1,0 +1,59 @@
+@import "variables";
+
+/* Modal styles */
+.ant-modal.ant-modal-confirm.ch-modal {
+  .ant-modal-confirm-btns {
+    float: none;
+  }
+  &.ant-modal-confirm-info {
+    border-radius: 12px;
+    font-size: 16px;
+    width: 45% !important;
+    .ant-modal-content {
+      text-align: center;
+      font-size: 16px;
+      border-radius: 12px;
+      padding: 2rem;
+      .ant-modal-body {
+        font-size: 18px;
+        padding: 0;
+      }
+    }
+  }
+  &.ant-modal-confirm-confirm {
+    width: 35% !important;
+    .ant-modal-content {
+      text-align: center;
+      font-size: 16px;
+      border-radius: 12px;
+      padding: 3rem 2rem;
+      .ant-modal-body {
+        font-size: 18px;
+        padding: 0;
+        .ant-modal-confirm-content {
+          font-family: MontserratMedium, sans-serif;
+        }
+        .ant-modal-confirm-btns {
+          width: 210px;
+          margin: 1rem auto 0 auto;
+          .ant-btn {
+            margin: 0;
+            width: 100px;
+            padding: 5px;
+            font-size: 1rem;
+            &.ant-btn-primary {
+              float: left;
+            }
+            &:not(.ant-btn-primary) {
+              float: right;
+              background-color: $secondary-color;
+              border: 1px solid $secondary-color;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

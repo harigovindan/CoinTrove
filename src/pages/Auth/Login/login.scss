@@ -1,0 +1,29 @@
+@import "src/styles/variables";
+
+.login {
+  border-radius: 8px;
+  background-color: $white;
+  box-shadow: $card-shadow;
+  padding: 3rem;
+  width: 40%;
+  margin: 0 auto;
+  .login__submit-wrapper {
+    margin-top: 1rem;
+  }
+  .login__signup-wrapper {
+    margin-top: 1rem;
+    .ant-btn.ant-btn-link.ant-btn-primary {
+      font-size: 1rem;
+    }
+  }
+}
+
+.login__password-wrapper {
+  position: relative;
+  .login__forgot-password-link {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: 1.5px;
+  }
+}

@@ -1,0 +1,36 @@
+@import "src/styles/variables";
+
+.buy-funds-form {
+
+}
+
+.buy-funds-form__details {
+  margin-top: 2rem;
+}
+
+.buy-funds-form__form {
+  width: 80%;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+  h6, .input-field-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 0;
+  }
+  h6 {
+    margin: 8px 20px 0 0;
+  }
+  .input-field-wrapper {
+    width: 70%;
+    .ant-input.input-field {
+      border-radius: 50rem;
+    }
+  }
+}
+
+.buy-funds-form__percentage {
+  .ch-button-group {
+    text-align: right;
+    margin-top: 1rem;
+  }
+}
