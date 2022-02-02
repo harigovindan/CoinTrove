@@ -1,0 +1,65 @@
+@import "../../styles/variables";
+
+.input-field-wrapper {
+  margin-bottom: 1rem;
+
+  input.ant-input.input-field,
+  textarea {
+    border: 1px solid $light-black;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-family: MontserratSemiBold, sans-serif;
+    &:focus + div.input-field__gradient-bg {
+      opacity: 1;
+    }
+  }
+
+  textarea.ant-input {
+    min-height: 100px;
+  }
+
+  .input-field.ant-input-group-wrapper {
+    .ant-input-group-addon {
+      border-radius: 8px 0 0 8px;
+      border-color: $light-black;
+    }
+
+    .ant-input {
+      padding: 12px;
+      border-radius: 0 8px 8px 0;
+      border-color: $light-black;
+    }
+  }
+}
+
+.input-field:focus {
+  outline: none !important;
+}
+
+.input-field__title {
+  margin: 0 0 10px;
+  color: $light-black;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input-field-wrapper__dark {
+  textarea,
+  input {
+    background: transparent !important;
+    color: white !important;
+  }
+}

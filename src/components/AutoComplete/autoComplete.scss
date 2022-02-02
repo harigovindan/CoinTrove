@@ -1,0 +1,29 @@
+@import "src/styles/variables";
+
+.app-auto-complete {
+  width: 80%;
+  margin: 0 auto;
+  .ant-select.ant-select-auto-complete.ant-select-single.ant-select-show-search {
+    width: 100%;
+    .ant-select-selector {
+      border-radius: 50rem;
+      padding: 7px 15px;
+      border: 1px solid $light-black;
+      height: auto;
+      background-color: $white;
+      font-family: MontserratSemiBold, sans-serif;
+      .ant-input-affix-wrapper {
+        padding: 0;
+        border: none !important;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+      input {
+        padding: 7px 0;
+        height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.ant-modal.ch-modal {
+  border-radius: 12px;
+  font-size: 16px;
+  .ant-modal-content {
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 3rem;
+    .ant-modal-body {
+      font-size: 18px;
+      padding: 0;
+    }
+  }
+}

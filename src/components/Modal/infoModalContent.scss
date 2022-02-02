@@ -1,0 +1,39 @@
+@import "src/styles/variables";
+
+.info-modal-content__icon-wrapper {
+  margin-bottom: 0.5rem;
+}
+
+.info-modal-content__icon-bg {
+  position: relative;
+  padding: 2rem;
+  border-radius: 50rem;
+  background: $primary-gradient;
+  display: inline-block;
+  i:before {
+    color: $white;
+  }
+  i {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 1.5rem;
+  }
+}
+
+.info-modal-content__title {
+  font-size: 1.5rem;
+  font-family: MontserratBold, sans-serif;
+}
+
+.info-modal-content__description {
+  font-family: MontserratMedium, sans-serif;
+  font-size: 1rem;
+  margin-top: 5px;
+  color: $light-black;
+}

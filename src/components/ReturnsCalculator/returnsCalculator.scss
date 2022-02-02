@@ -1,0 +1,43 @@
+@import "src/styles/variables";
+
+.returns-calculator {
+  margin-top: 1.5rem;
+  background-color: $white;
+  padding: 3rem;
+  box-shadow: $card-shadow;
+  border-radius: 12px;
+
+  .returns-calculator__amount {
+    margin: 2rem 0;
+    font-size: 24px;
+    font-family: MontserratSemiBold, sans-serif;
+  }
+  .ant-slider {
+    margin-bottom: 1rem;
+  }
+
+  .returns-calculator__total-investment {
+    margin-top: 1.5rem;
+  }
+  .returns-calculator__total-returns {
+    margin-top: 1rem;
+    font-size: 20px;
+    font-family: MontserratSemiBold, sans-serif;
+  }
+  .returns-calculator__duration {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid $primary-border;
+  }
+  .returns-calculator__total-returns {
+    &.increase {
+      span {
+        color: $success-color;
+      }
+    }
+    &.decrease {
+      span {
+        color: $danger-color;
+      }
+    }
+  }
+}

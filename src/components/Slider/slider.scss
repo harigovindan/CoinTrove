@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+
+.ant-slider {
+  .ant-slider-track {
+    background-color: $primary-color;
+  }
+  .ant-slider-handle {
+    background-color: $primary-color;
+    border: 3px solid $white;
+    width: 27px;
+    height: 27px;
+    margin-top: -13px;
+    &:focus {
+      box-shadow: $slider-shadow;
+    }
+  }
+  .ant-slider-handle-dragging.ant-slider-handle-dragging.ant-slider-handle-dragging {
+    border-color: $white;
+  }
+  &:hover {
+    .ant-slider-track {
+      background-color: $primary-color;
+    }
+    .ant-slider-handle:not(.ant-tooltip-open) {
+      border-color: $white;
+    }
+  }
+}
+
+.ant-tooltip.ant-slider-tooltip  {
+  border-radius: 4px;
+  .ant-tooltip-inner {
+    background-color: $primary-color;
+    border-radius: 4px;
+    font-family: MontserratSemiBold, sans-serif;
+  }
+  .ant-tooltip-arrow-content {
+    background-color: $primary-color;
+  }
+}

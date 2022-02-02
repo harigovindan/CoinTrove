@@ -1,0 +1,65 @@
+@import "src/styles/variables";
+
+.fund-tile {
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  background-color: $white;
+  box-shadow: $card-shadow;
+  border-radius: 12px;
+  padding: 1.5rem;
+  .fund-tile__description {
+    color: $light-black;
+    margin-bottom: 5px;
+  }
+
+  >.fund-tile__detail {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    margin: 0.25rem 0;
+    >.fund-tile__label, .fund-tile__value {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .fund-tile__label {
+      color: $light-black;
+    }
+    .fund-tile__value {
+      color: $black;
+      font-family: MontserratSemiBold, sans-serif;
+      margin-left: 2px;
+    }
+    &:nth-child(2n) {
+      text-align: right;
+    }
+    .fund-title__returns {
+      font-family: MontserratSemiBold, sans-serif;
+      font-size: 16px;
+      .fund-tile__return-value {
+        &.increase {
+          color: $success-color;
+          svg {
+            color: $success-color;
+          }
+        }
+        &.decrease {
+          color: $danger-color;
+          svg {
+            color: $danger-color;
+          }
+        }
+      }
+      .fund-tile__return-label {
+        color: $light-black;
+      }
+    }
+  }
+  .fund-tile__line-chart {
+    .line-chart {
+      canvas {
+        height: 70px;
+      }
+    }
+  }
+}

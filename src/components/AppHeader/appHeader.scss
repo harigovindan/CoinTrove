@@ -1,0 +1,146 @@
+@import "src/styles/variables";
+
+.app-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: $white;
+  box-shadow: $card-shadow;
+  padding: 0.5rem 0;
+  z-index: 10;
+  .app-header__container {
+    padding: 0 2.5rem;
+  }
+
+  .app-header__logo {
+    width: 100%;
+  }
+  ul.app-header__menu-items, ul.app-header__profile-items  {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    > a, > li {
+      cursor: pointer;
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+      font-family: MontserratMedium, sans-serif;
+      i, span {
+        display: inline-block;
+        vertical-align: middle;
+        color: $light-black;
+      }
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+  ul.app-header__menu-items {
+    li.app-header__menu-item {
+      padding-bottom: 2px;
+      &:hover {
+        i:before, span {
+          color: $primary-color;
+        }
+      }
+      &.active {
+        border-bottom: 2px solid $primary-color;
+        font-family: MontserratSemiBold, sans-serif;
+        i:before, span {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  ul.app-header__menu-items,
+  ul.app-header__profile-items {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  ul.app-header__profile-items {
+    margin-left: 2rem;
+    li.app-header__profile-achievements {
+      padding: 10px 15px;
+      background-color: $primary-color;
+      border-radius: 4px;
+      i:before, span {
+        color: $white;
+      }
+    }
+    li.app-header__profile-dropdown {
+      img, .app-header__profile-details {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+      }
+      .app-header__profile-details {
+        margin-left: 10px;
+      }
+      .app-header__profile-name {
+        font-family: MontserratBold, sans-serif;
+        color: $black;
+        svg {
+          font-size: 12px;
+          color: $black;
+        }
+      }
+      .app-header__profile-role {
+        color: $light-black;
+        font-size: 14px;
+      }
+    }
+  }
+}
+.app-header__profile-dropdown-menu {
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+  &:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $white;
+    top: -8px;
+    right: 5px;
+  }
+  &.right-pointed {
+    &:before {
+      left: -20px;
+    }
+  }
+  >.app-header__profile-menu-item {
+    padding: 10px;
+    color: $light-black;
+    border-radius: 4px;
+    .ant-dropdown-menu-title-content {
+      > span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    &.active {
+      color: $black;
+      font-family: MontserratSemiBold, sans-serif;
+      i:before {
+        color: $black;
+      }
+    }
+    font-family: MontserratMedium, sans-serif;
+    svg {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .app-header__container {
+    display: block;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+}

@@ -1,0 +1,20 @@
+@import "src/styles/variables";
+
+.investment-summary-card {
+  .line-chart {
+    width: 100%;
+    canvas {
+      height: 300px;
+    }
+  }
+}
+
+
+.investment-summary-card__details {
+  margin-top: 90px;
+}
+
+.investment-summary-card__item {
+  font-size: 24px;
+  font-family: MontserratSemiBold, sans-serif;
+}

@@ -1,0 +1,211 @@
+@import "../../styles/variables";
+
+/* Button overrides */
+
+button.ant-btn {
+  position: relative;
+  border-radius: 50rem;
+  padding: 10px 80px;
+  width: auto;
+  height: auto;
+  font-family: MontserratSemiBold, sans-serif;
+  font-size: 17px;
+  &.ant-btn-less-rounded {
+    border-radius: 8px;
+    &:after {
+      border-radius: 12px;
+    }
+  }
+  &.ant-btn-link {
+    border-radius: 0;
+    &:hover {
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+  &:after {
+    position: absolute;
+    content: '';
+    z-index: 0;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 50rem;
+    border: 3px solid transparent;
+    transition: all 0.25s ease;
+  }
+  &[disabled] {
+    opacity: 0.4;
+  }
+  &.ant-btn-raised {
+    box-shadow: $button-shadow;
+  }
+  &.ant-btn-icon-prefix, &.ant-btn-icon-suffix {
+    i:before {
+      display: inline-block;
+      vertical-align: middle;
+      color: $white;
+      font-size: 16px;
+    }
+  }
+  &.ant-btn-icon-suffix {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &.ant-btn-icon-prefix {
+    i:before {
+      margin-right: 10px;
+    }
+  }
+  &.ant-btn-icon-suffix {
+    i:before {
+      margin-left: 30px;
+    }
+  }
+  &.ant-btn-animated {
+    &.ant-btn-icon-suffix {
+      text-align: center;
+      padding: 10px 45px;
+      width: 135px;
+      i {
+        &:before {
+          transition: all 0.25s ease;
+          opacity: 0;
+          width: 0;
+          margin-left: 0;
+        }
+      }
+      &:hover {
+        text-align: left;
+        padding: 10px 20px;
+        i {
+          &:before {
+            opacity: 1;
+            width: auto;
+            margin-left: 35px;
+          }
+        }
+      }
+    }
+    &.ant-btn-icon-prefix {
+      text-align: center;
+      padding: 10px 45px;
+      width: 168px;
+      i {
+        &:before {
+          transition: all 0.25s ease;
+          opacity: 0;
+          width: 0;
+          margin-right: 0;
+        }
+      }
+      &:hover {
+        text-align: left;
+        padding: 10px 20px;
+        i {
+          &:before {
+            opacity: 1;
+            width: auto;
+            margin-right: 35px;
+          }
+        }
+      }
+    }
+  }
+  &.ant-btn-primary,&.ant-btn-primary[disabled]:hover {
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    color: $white;
+    &.ant-btn-outlined {
+      color: $primary-color;
+      background-color: white;
+    }
+    &.ant-btn-link {
+      color: $primary-color;
+      background-color: transparent;
+      padding: 10px 0;
+      border: none;
+      &.ant-btn-icon-prefix {
+        i:before {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  &.ant-btn-primary:not(.ant-btn-link):hover {
+    &::after {
+      border: 3px solid $primary-light-color;
+    }
+  }
+  &.ant-btn-success {
+    background-color: $success-color;
+    border: 1px solid $success-color;
+    color: $white;
+  }
+  &.ant-btn-secondary, &.ant-btn-secondary[disabled]:hover {
+    background-color: $secondary-color;
+    border: 1px solid $secondary-color;
+    color: $white;
+    &.ant-btn-outlined {
+      color: $secondary-color;
+      background-color: white;
+    }
+    &.ant-btn-link {
+      color: $secondary-color;
+      background-color: transparent;
+      padding: 10px 0;
+      border: none;
+      &.ant-btn-icon-prefix {
+        i:before {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+  &.ant-btn-secondary:not(.ant-btn-link):hover {
+    &::after {
+      border: 3px solid $secondary-light-color;
+    }
+  }
+  &.ant-btn-tertiary, &.ant-btn-tertiary[disabled]:hover {
+    background-color: $tertiary-color;
+    border: 1px solid $tertiary-color;
+    color: $light-black;
+    &.ant-btn-outlined {
+      color: $light-black;
+      background-color: white;
+      border: 1px solid $light-black;
+    }
+    &.ant-btn-link {
+      color: $light-black;
+      background-color: transparent;
+      padding: 10px 0;
+      border: none;
+      &.ant-btn-icon-prefix {
+        i:before {
+          color: $light-black;
+        }
+      }
+    }
+    &.ant-btn-icon-prefix {
+      i:before {
+        color: $light-black;
+      }
+    }
+  }
+  &.ant-btn-tertiary:not(.ant-btn-link):hover {
+    &::after {
+      border: 3px solid $tertiary-light-color;
+    }
+  }
+  &.ant-btn-small {
+    padding: 4px 25px;
+    font-size: 15px;
+  }
+  &.ant-btn-full-width {
+    width: 100%;
+  }
+}
